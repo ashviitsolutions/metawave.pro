@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+:root {
+    --primary-color: #2998f9;
+    --secondary-color: #2998f9;
+    --radial-gradient: radial-gradient(#043548 10%, #040404);
+    --dark-color: #040404;
+    --text-color: #e1e1e1;
+    --font-family: "Bricolage Grotesque", sans-serif;
+    --small-text: 0.7em;
+    --medium-text: 0.9em;
+    --large-text: 1.1em;
+    --xlarge-text: 1.6em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    font-family: var(--font-family);
+    min-height: 100vh;
+    color: var(--text-color);
+    font-size: 1.5em;
+    background: var(--radial-gradient);
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+p {
+    font-size: 1em;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.button-primary {}
+
+.button-secondary {
+    color: var(--secondary-color);
+    background-color: transparent;
+    border: solid 2px;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-primary {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.logo {
+    padding: 5px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark-color);
+    padding: 2px;
+    border-radius: 10px;
+    /* border: solid 3px #5a5a5a85; */
+}
+
+.navigation {
+    padding: 5px 20px;
+}
+
+.navigation-list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0;
+}
+
+.hero div {
+    max-width: 60%;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.flex {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.sub {
+    opacity: 0.5;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.small-text {
+    font-size: var(--small-text);
+}
+
+.medium-text {
+    font-size: var(--medium-text);
+}
+
+.large-text {
+    font-size: var(--large-text);
+}
+
+.xlarge-text {
+    font-size: var(--xlarge-text);
+}
+
+.container-box {
+    max-width: 80%;
+    margin: auto;
+}
+
+a:hover,
+button:hover,
+input[type="submit"] {
+    transition: .3s ease-in-out;
+    filter: contrast(5.5);
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+
+
+@keyframes updown {
+    from {
+        position: relative;
+        top: 0;
+    }
+
+    to {
+        top: 30px;
+    }
+}
+
+.updown {
+    animation: updown 1.5s infinite ease-in-out alternate;
+    /* animation-name: updown;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate; */
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.opacity-animate {
+    opacity: 0;
+    animation: opacity 1s 1 1s ease-in-out forwards alternate;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0;
+}
+
+.with-padding {
+    padding: 100px 5px;
+}
+
+.about-right {
+    flex-basis: 60%;
+    background-color: #04040494;
+    padding: 25px;
+    border-radius: 25px;
+    gap: 30px;
+}
+
+.about-left img {
+    transform: rotateY(180deg);
+}
+
+.features {
+    padding-left: 30px;
+    list-style-image: url('../img/check1.png');
+    list-style-position: inside;
+}

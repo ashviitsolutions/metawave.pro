@@ -8,20 +8,23 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body id="home">
     <div class="container">
-        <header class="glass-effect">
+        <header class="glass-effect container-box">
             <div class="logo"><img src="assets/img/logo_horizontal.svg" alt="MetaWave" height="80px"></div>
             <div class="navigation">
                 <ul class="navigation-list small-text">
-                    <li class="navigation-item"><a href="#" class="navigation-link">Home</a></li>
-                    <li class="navigation-item"><a href="#" class="navigation-link">About</a></li>
-                    <li class="navigation-item"><a href="#" class="navigation-link">Services</a></li>
-                    <li class="navigation-item"><a href="#" class="navigation-link">Contact</a></li>
+                    <li class="navigation-item"><a href="#home" class="navigation-link">Home</a></li>
+                    <li class="navigation-item"><a href="#strategy-robot" class="navigation-link">Strategy Robot</a>
+                    </li>
+                    <li class="navigation-item"><a href="#how-it-works" class="navigation-link">How it works?</a></li>
+                    <li class="navigation-item"><a href="#past-data" class="navigation-link">Past Data</a></li>
+                    <button class="button-primary gold-gradient">Join Now</button>
+
                 </ul>
             </div>
         </header>
-        <section class="hero container-box  opacity-animate">
+        <section class="hero container-box opacity-animate with-padding">
             <div class="hero-left">
                 <h1 class=""><span class="large-text">Automated Crypto Trading Powered by</span><br><span
                         class="xlarge-text">MetaWave Strategy Robot</span></h1>
@@ -34,7 +37,7 @@
                     market using predefined, rule-based logic. Our focus is transparency, risk awareness, and long-term
                     sustainability.</p>
                 <div class="hero-buttons">
-                    <button class="button-primary">Join</button>
+                    <button class="button-primary gold-gradient">Join</button>
                     <button class="button-secondary">View Live Performance</button>
                     <button class="button-secondary">Chat</button>
                 </div>
@@ -43,7 +46,7 @@
                 <img src="assets/img/robo1.png" alt="MetaWave" height="500px" class="updown">
             </div>
         </section>
-        <div class="container-fluid dark-background with-padding">
+        <div class="container-fluid dark-background with-padding" id="strategy-robot">
             <section class="about container-box">
                 <div class="about-left">
                     <img src="assets/img/robo2.png" alt="MetaWave" height="500px">
@@ -61,15 +64,17 @@
                         <li>Risk-managed position sizing</li>
                         <li>No manual intervention in live trades</li>
                     </ul>
-                    <p class="small-text">* The robot connects to the user’s own exchange account via API access with
+                    <p class="small-text sub">* The robot connects to the user’s own exchange account via API access
+                        with
                         withdrawal permissions disabled.
                     </p>
+                    <p><button class="button-primary gold-gradient">Join Now</button></p>
                 </div>
             </section>
         </div>
 
-        <div class="container-fluid with-padding">
-            <section class="">
+        <div class="container-fluid with-padding" id="how-it-works">
+            <section class="container-box">
                 <div class="work-steps-container flex">
                     <div class="main-image center">
                         <img src="assets/img/phone.png" alt="How it works" width="100%">
@@ -94,10 +99,89 @@
                                 account
                             </p>
                         </div>
+                        <p class="small-text center sub"><img src="assets/img/metawave.pro.svg" alt="Info" height="14px"
+                                style="top: 3px;"> does not hold or control user funds.</p>
                     </div>
                 </div>
             </section>
         </div>
+        <div class="container-fluid dark-background with-padding" id="past-data">
+            <section class="container-box">
+                <h2 class="xlarge-text center">STRATEGY PERFORMANCE (PAST DATA)</h2>
+                <p class="medium-text center sub">Updated daily for transparency purposes</p>
+
+                <div class="performance-section flex with-padding">
+                    <div class="performance-section-left flex column">
+                        <div class="work work4 glass-effect">
+                            <div class="number large-text">%</div>
+                            <div class="flex column">
+                                <h3 class="large-text center">+1.84%</h3>
+                                <p class="small-text center sub">Yesterday’s Result</p>
+                            </div>
+                        </div>
+                        <div class="work work4 glass-effect">
+                            <div class="number large-text">%</div>
+                            <div class="flex column">
+                                <h3 class="large-text center">+6.27%</h3>
+                                <p class="small-text center sub">Last 7 Days</p>
+                            </div>
+                        </div>
+                        <div class="work work4 glass-effect">
+                            <div class="number large-text">%</div>
+                            <div class="flex column">
+                                <h3 class="large-text center">+23.45%</h3>
+                                <p class="small-text center sub">Last 30 Days</p>
+                            </div>
+                        </div>
+                        <div class="work work4 glass-effect">
+                            <div class="number large-text"><span style="font-size:1.3rem;">&#35;</span></div>
+                            <div class="flex column">
+                                <h3 class="large-text center">1,284</h3>
+                                <p class="small-text center sub">Total Trades Executed</p>
+                            </div>
+                        </div>
+                        <div class="work work4 glass-effect">
+                            <div class="number large-text">%</div>
+                            <div class="flex column">
+                                <h3 class="large-text center">63.8%</h3>
+                                <p class="small-text center sub">Historical Win Rate</p>
+                            </div>
+                        </div>
+
+                        <!-- <img src="assets/img/up_png.png" alt="Performance" width="100%"> -->
+
+                    </div>
+
+                    <img src="assets/img/trophy.png" alt="Performance" style="max-height: 800px;">
+
+                </div>
+
+            </section>
+
+            <div class="center sub small-text">
+                <h3 class="medium-text">Disclaimer:</h3>
+                <p class="small-text">⚠️ Past performance is not indicative of future results. Crypto markets are
+                    volatile and losses
+                    are possible.</p>
+            </div>
+        </div>
+        <div class="container-fluid footer">
+            <div class="footer-content container-box flex">
+                <div class="footer-left flex column">
+                    <p class="small-text sub">Copyright © 2026 MetaWave. All rights reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <p class="small-text sub">Designed &amp; Developed with 🤍 by <a href="https://ashvi.net"
+                            target="_blank">Ashvi.net</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top-button gold-gradient">
+        <a href="#home">
+            &uArr;
+        </a>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,34 @@
+@keyframes updown {
+    from {
+        position: relative;
+        top: 0;
+    }
+
+    to {
+        top: 30px;
+    }
+}
+
+.updown {
+    animation: updown 1.5s infinite ease-in-out alternate;
+    /* animation-name: updown;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate; */
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.opacity-animate {
+    opacity: 0;
+    animation: opacity 1s 1 1s ease-in-out forwards alternate;
+}

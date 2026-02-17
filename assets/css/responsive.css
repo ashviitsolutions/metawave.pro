@@ -1,0 +1,49 @@
+@media screen and (max-width: 940px) {
+    :root {
+        --xlarge-text: 3rem !important;
+    }
+
+    /* .hero-right {
+        display: none;
+    } */
+    html {
+        font-size: 14px !important;
+    }
+
+    .flex-mobile {
+        flex-direction: column;
+        gap: 20px !important;
+    }
+
+
+    .flex-mobile {
+        flex-direction: column;
+        gap: 20px !important;
+    }
+
+
+    .mobile-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .container-box {
+        max-width: 95% !important;
+    }
+
+    .hero div {
+        max-width: 100% !important;
+    }
+
+    .hero-buttons button {
+        width: 100% !important;
+    }
+
+    .performance-section .work {
+        min-width: 80vw !important;
+    }
+
+    .wrap-reverse {
+        flex-direction: column-reverse !important;
+    }
+}

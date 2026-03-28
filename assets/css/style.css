@@ -86,7 +86,7 @@ a {
 }
 
 .logo {
-    padding: 5px;
+    padding: 5px 0 5px 10px;
 }
 
 .logo img {
@@ -94,7 +94,7 @@ a {
 }
 
 header {
-    /* position: sticky; */
+    position: sticky;
     z-index: 10;
     top: 20px;
     display: flex;
@@ -395,4 +395,18 @@ input[type="submit"] {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: var(--text-color);
+}
+
+.performance-section p {
+    font-size: 1.6rem;
+}
+
+.qr-code {
+    background: white;
+    width: max-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    outline: solid 5px yellow;
+    outline-offset: 10px;
 }
